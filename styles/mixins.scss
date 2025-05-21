@@ -1,0 +1,88 @@
+@mixin Flex() {
+    display: flex;
+    align-items: center;
+}
+
+@mixin Link() {
+    font-size: clamp(14px, 1.07vw, 20px);
+    font-weight: 700;
+    text-decoration: none;
+
+    &::before {
+        content: '▶';
+        font-size: 0.7em;
+        padding-right: 10px;
+    }
+
+    span {
+        text-decoration: none;
+    }
+
+    &:hover span {
+        text-decoration: underline;
+    }
+}
+
+@mixin H3 {
+    color: $Titles_color;
+    font-size: clamp(26px, 1.88vw, 36px);
+}
+
+@mixin P {
+    color: rgba(33, 56, 66, 0.60);
+    font-size: clamp(14px, 1.07vw, 20px);
+}
+
+@mixin Line() {
+    display: flex;
+    justify-self: center;
+    background-color: #adadadad;
+    width: 75%;
+    height: 5px;
+    opacity: 0.2;
+    margin-block: 150px;
+}
+
+@mixin Box-shadow__card() {
+    box-shadow: 0px 100px 100px 0px rgba(0, 0, 0, 0.15);
+}
+
+@mixin Gray-link() {
+    color: $Sections_color;
+}
+
+@mixin Card_logo() {
+    width: 90px;
+    aspect-ratio: 1;
+}
+
+@mixin P_card() {
+    color: $Titles_color;
+    font-size: clamp(18px, 1.25vw, 24px);
+}
+
+@mixin H4() {
+    color: $Titles_color;
+    font-size: clamp(20px, 1.25vw, 24px);
+    font-weight: 500;
+    line-height: 34px;
+    text-transform: uppercase;
+}
+
+@mixin yellow_BG_link() {
+    color: $Sections_color;
+
+    &:hover {
+        color: $Hover_Links_color;
+    }
+}
+
+@mixin Footer_line() {
+    display: flex;
+    justify-self: center;
+    background-color: #adadadad;
+    width: 75%;
+    height: 1px;
+    opacity: 0.2;
+    margin-block: 52px;
+}
