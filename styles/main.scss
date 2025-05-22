@@ -191,7 +191,6 @@
     max-width: 976px;
     display: flex;
     justify-content: center;
-    margin: 0 auto;
     gap: 133px;
     margin-bottom: 102px;
     padding-inline: 30px;
@@ -204,6 +203,7 @@
     p {
         max-width: 518px;
         @include P();
+
     }
 }
 
@@ -453,8 +453,6 @@
 
     .design-card {
         max-width: 280px;
-        margin-top: 0 !important;
-        order: 2;
     }
 
     .project {
@@ -463,14 +461,13 @@
         gap: 30px;
     }
 
-    .design-slider .line {
-        order: 3;
-        margin: 30px auto;
-    }
-
     .product-card {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
+    }
+
+    .line {
+        margin-top: 370px;
     }
 
     .balenciaga,

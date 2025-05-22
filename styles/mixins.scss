@@ -34,10 +34,12 @@
 }
 
 @mixin Line() {
+    display: flex;
+    justify-self: center;
     background-color: #adadadad;
     width: 75%;
     height: 1px;
-    margin: 150px auto;
+    margin-block: 150px;
 }
 
 @mixin Box-shadow__card() {
