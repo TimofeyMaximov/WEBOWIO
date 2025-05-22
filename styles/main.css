@@ -23,13 +23,10 @@
 }
 
 .line {
-  display: flex;
-  justify-self: center;
   background-color: rgba(173, 173, 173, 0.6784313725);
   width: 75%;
-  height: 5px;
-  opacity: 0.2;
-  margin-block: 150px;
+  height: 1px;
+  margin: 150px auto;
 }
 
 .gray_link {
@@ -460,15 +457,21 @@
 @media (max-width: 800px) {
   .design-slider {
     flex-direction: column;
-    margin-block: 50px;
+    padding-top: 30px;
   }
   .design-card {
     max-width: 280px;
+    margin-top: 0 !important;
+    order: 2;
   }
   .project {
     flex-direction: column;
     justify-self: center;
     gap: 30px;
+  }
+  .design-slider .line {
+    order: 3;
+    margin: 30px auto;
   }
   .product-card {
     grid-template-columns: repeat(2, 1fr);

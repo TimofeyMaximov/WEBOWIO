@@ -448,17 +448,24 @@
 @media(max-width: 800px) {
     .design-slider {
         flex-direction: column;
-        margin-block: 50px;
+        padding-top: 30px;
     }
 
     .design-card {
         max-width: 280px;
+        margin-top: 0 !important;
+        order: 2;
     }
 
     .project {
         flex-direction: column;
         justify-self: center;
         gap: 30px;
+    }
+
+    .design-slider .line {
+        order: 3;
+        margin: 30px auto;
     }
 
     .product-card {
